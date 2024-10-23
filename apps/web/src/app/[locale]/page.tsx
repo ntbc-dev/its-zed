@@ -39,7 +39,7 @@ export default async function IndexPage({
         <PageHeaderHeading>
           <FlipWords
             words={["ITS Zambia", "It's ZED"]}
-            className="text-7xl lg:text-9xl -z-10"
+            className="text-6xl lg:text-9xl -z-10"
           />
 
           <TextGenerateEffect words={t("site.heading")} />
