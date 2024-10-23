@@ -40,7 +40,7 @@ export async function SiteHeader() {
 
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
           <div className="w-full flex-1 md:w-auto md:flex-none">
-            <CommandMenu
+            {/* <CommandMenu
               messages={{
                 docs: t('words.docs'),
                 blog: t('words.blog'),
@@ -56,11 +56,11 @@ export async function SiteHeader() {
                   system: t('themes.system'),
                 },
               }}
-            />
+            /> */}
           </div>
 
           <nav className="flex items-center">
-            <VersionDropdown
+            {/* <VersionDropdown
               messages={{
                 changelog: t('changelog'),
               }}
@@ -70,7 +70,7 @@ export async function SiteHeader() {
               messages={{
                 toggleLanguage: t('buttons.toggle_language'),
               }}
-            />
+            /> */}
 
             <ThemeModeToggle
               messages={{
@@ -81,8 +81,8 @@ export async function SiteHeader() {
             />
 
             <div className="phone:flex hidden items-center">
-              <Separator orientation="vertical" className="mx-1 h-5" />
-              <SiteHeaderMenuLinks />
+              {/* <Separator orientation="vertical" className="mx-1 h-5" /> */}
+              {/* <SiteHeaderMenuLinks /> */}
             </div>
           </nav>
         </div>

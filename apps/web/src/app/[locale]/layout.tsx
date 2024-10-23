@@ -36,19 +36,26 @@ export async function generateMetadata({
 
     description: getObjectValueByLocale(siteConfig.description, params.locale),
 
+    // keywords: [
+    //   'Docs',
+    //   'Blog',
+    //   'i18n',
+    //   'React',
+    //   'shadcn',
+    //   'Next.js',
+    //   'Radix UI',
+    //   'Template',
+    //   'Tailwind CSS',
+    //   'Documentation',
+    //   'Server Components',
+    //   'Internationalization',
+    // ],
     keywords: [
-      'Docs',
-      'Blog',
-      'i18n',
-      'React',
-      'shadcn',
-      'Next.js',
-      'Radix UI',
-      'Template',
-      'Tailwind CSS',
-      'Documentation',
-      'Server Components',
-      'Internationalization',
+      "Innovation",
+      "NTBC",
+      "National Technology Business Centre",
+      "It's ZED",
+      "ITS Zambia",
     ],
 
     authors: [
@@ -61,15 +68,15 @@ export async function generateMetadata({
     creator: siteConfig.author.name,
 
     openGraph: {
-      type: 'website',
-      locale: 'en_US',
+      type: "website",
+      locale: "en_US",
       url: siteConfig.url,
       title: siteConfig.name,
       siteName: siteConfig.name,
 
       description: getObjectValueByLocale(
         siteConfig.description,
-        params.locale
+        params.locale,
       ),
 
       images: [
@@ -84,23 +91,23 @@ export async function generateMetadata({
     twitter: {
       creator: siteConfig.links.twitter.username,
       title: siteConfig.name,
-      card: 'summary_large_image',
+      card: "summary_large_image",
       images: [siteConfig.og.image],
 
       description: getObjectValueByLocale(
         siteConfig.description,
-        params.locale
+        params.locale,
       ),
     },
 
     icons: {
-      icon: '/favicon.ico',
-      apple: '/apple-touch-icon.png',
-      shortcut: '/favicon-16x16.png',
+      icon: "/favicon.ico",
+      apple: "/apple-touch-icon.png",
+      shortcut: "/favicon-16x16.png",
     },
 
     manifest: `${siteConfig.url}/site.webmanifest`,
-  }
+  };
 }
 
 export const dynamicParams = true

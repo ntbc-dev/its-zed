@@ -56,17 +56,17 @@ export function MobileNav({ messages, menuLinks }: MobileNavProps) {
           className="flex items-center"
           onOpenChange={setOpen}
         >
-          <Icons.logo className="mr-2 size-4" />
+          {/* <Icons.logo className="mr-2 size-4" /> */}
           <span className="font-bold">{siteConfig.name}</span>
         </MobileLink>
 
-        {menuLinks && (
+        {/* {menuLinks && (
           <div className="flex phone:hidden flex-col space-y-2 items-end pr-2">
             {menuLinks}
           </div>
-        )}
+        )} */}
 
-        <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
+        {/* <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
           <div className="flex flex-col space-y-3">
             {blogConfig.mainNav?.map((item) => (
               <MobileLink key={item.href} href="/blog" onOpenChange={setOpen}>
@@ -101,7 +101,7 @@ export function MobileNav({ messages, menuLinks }: MobileNavProps) {
               />
             )}
           </div>
-        </ScrollArea>
+        </ScrollArea> */}
       </SheetContent>
     </Sheet>
   )

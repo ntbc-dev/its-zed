@@ -18,7 +18,7 @@ export function MainNav({ messages }: MainNavProps) {
   return (
     <div className="mr-4 hidden md:flex">
       <Link href="/" className="mr-6 flex items-center space-x-2">
-        <Icons.logo className="size-4" />
+        {/* <Icons.logo className="size-4" /> */}
 
         <span className="hidden font-bold sm:inline-block">
           {siteConfig.name}
@@ -26,7 +26,7 @@ export function MainNav({ messages }: MainNavProps) {
       </Link>
 
       <nav className="flex items-center gap-4 text-sm lg:gap-6">
-        <Link
+        {/* <Link
           href="/blog"
           className={cn(
             'hover:text-foreground/80 transition-colors',
@@ -36,9 +36,9 @@ export function MainNav({ messages }: MainNavProps) {
           )}
         >
           {messages.blog}
-        </Link>
+        </Link> */}
 
-        <Link
+        {/* <Link
           href="/docs"
           className={cn(
             'hover:text-foreground/80 transition-colors',
@@ -48,7 +48,7 @@ export function MainNav({ messages }: MainNavProps) {
           )}
         >
           {messages.docs}
-        </Link>
+        </Link> */}
       </nav>
     </div>
   )

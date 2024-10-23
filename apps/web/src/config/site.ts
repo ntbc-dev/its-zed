@@ -3,7 +3,7 @@ import en from '@/i18n/locales/en.json'
 import pt from '@/i18n/locales/pt.json'
 
 export const siteConfig = {
-  name: 'opendocs',
+  name: 'ITS Zambia',
 
   description: {
     en: en.site.description,
@@ -26,20 +26,20 @@ export const siteConfig = {
   },
 
   author: {
-    name: 'Dalton Menezes',
-    site: 'https://daltonmenezes.com',
+    name: 'National Technology Business Centre',
+    site: 'https://ntbc.co.zm',
   },
 
   links: {
     twitter: {
       label: 'Twitter',
-      username: '@daltonmenezes',
-      url: 'https://twitter.com/daltonmenezes',
+      username: '@ntbc-zamba',
+      url: 'https://twitter.com/ntbc-zamba',
     },
 
     github: {
       label: 'GitHub',
-      url: 'https://github.com/daltonmenezes/opendocs',
+      url: 'https://github.com/ntbz-dev',
     },
   },
 } as const

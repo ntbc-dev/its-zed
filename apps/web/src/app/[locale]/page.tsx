@@ -34,20 +34,20 @@ export default async function IndexPage({
   return (
     <div className="container relative">
       <PageHeader>
-        <Announcement title={t('site.announcement')} href="/docs" />
+        {/* <Announcement title={t('site.announcement')} href="/docs" /> */}
 
         <PageHeaderHeading>
           <FlipWords
-            words={['site', 'blog', 'docs']}
+            words={["ITS Zambia", "It's ZED"]}
             className="text-9xl -z-10"
           />
 
-          <TextGenerateEffect words={t('site.heading')} />
+          <TextGenerateEffect words={t("site.heading")} />
         </PageHeaderHeading>
 
-        <PageHeaderDescription>{t('site.description')}</PageHeaderDescription>
+        <PageHeaderDescription>{t("site.description")}</PageHeaderDescription>
 
-        <PageActions>
+        {/* <PageActions>
           <Link href="/docs" className={cn(buttonVariants())}>
             {t('site.buttons.get_started')}
           </Link>
@@ -62,7 +62,7 @@ export default async function IndexPage({
             <Icons.gitHub className="mr-2 size-4" />
             {siteConfig.links.github.label}
           </Link>
-        </PageActions>
+        </PageActions> */}
 
         <div className="fixed left-0 -top-40 size-full -z-10 overflow-hidden">
           <Vortex
@@ -77,39 +77,39 @@ export default async function IndexPage({
       </PageHeader>
 
       <section className="flex flex-col gap-4">
-        <div className="grid grid-cols-2 gap-4 lg:grid-cols-2 2xl:grid-cols-4">
+        <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 2xl:grid-cols-4">
           <FeaturedCard
             icon="🧬"
-            title="Next.js"
-            description={t('site.featured_cards.nextjs.description')}
+            title="Facilitating connections and collaborations."
+            description="ITS-Zed aspires to provide a platform for attendees to connect with peers, share ideas, and inspire each other"
           />
 
           <FeaturedCard
             icon="⚡️"
-            title="Shadcn"
-            description={t('site.featured_cards.shadcn.description')}
+            title="Mentorship and support for tech startups"
+            description=" ITS-Zed will offer opportunities for startups to connect with investors, mentors, and ecosystem enablers"
           />
 
           <FeaturedCard
             icon="🚀"
-            title="Tailwind"
-            description={t('site.featured_cards.tailwind.description')}
+            title="Celebrating the achievements of Zambian innovators "
+            description="The summit will culminate in an awards gala recognizing the winners of various pitching competitions"
           />
 
           <FeaturedCard
             icon="🌍"
-            title="i18n"
-            description={t('site.featured_cards.i18n.description')}
+            title="Promote emerging technologies in businesses"
+            description="The summit will feature a masterclass and TeDex talk focusing on how tech startups can leverage technologies"
           />
         </div>
 
-        <FeaturedCard
+        {/* <FeaturedCard
           icon="+"
           orientation="horizontal"
           title={t('site.featured_cards.more.title')}
           description={t('site.featured_cards.more.description')}
-        />
+        /> */}
       </section>
     </div>
-  )
+  );
 }

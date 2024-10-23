@@ -37,7 +37,7 @@ export function FeaturedCard({
           </div>
         )}
 
-        {title && <CardTitle>{title}</CardTitle>}
+        {title && <CardTitle className="leading-normal">{title}</CardTitle>}
       </CardHeader>
 
       <CardContent className="flex flex-col gap-2">
